@@ -1,3 +1,9 @@
+import time
+
 def run(args):
-    print "Hello World"
-    print args
+    while True:
+        print "Hello world %s" % str(args)
+        time.sleep(1)
+
+if __name__ == "__main__":
+    run(None)
