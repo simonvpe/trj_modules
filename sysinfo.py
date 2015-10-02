@@ -4,6 +4,8 @@ import getpass
 
 def run(data_file, args):
     print "Running sysinfo"
+    print "data_file:%s" % str(data_file.data)
+    print "args:%s" % str(args)
     data = {
         'machine'  : platform.machine(),
         'node'     : platform.node(),
