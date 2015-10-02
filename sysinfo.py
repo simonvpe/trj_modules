@@ -1,9 +1,8 @@
 import platform
 import json
+import getpass
 
-def run(f, args):
-    print f
-    print f.data
+def run(data_file, args):
     data = {
         'machine'  : platform.machine(),
         'node'     : platform.node(),
@@ -11,6 +10,7 @@ def run(f, args):
         'processor': platform.processor(),
         'release'  : platform.release(),
         'system'   : platform.system(),
-        'version'  : platform.version()
+        'version'  : platform.version(),
+        'user'     : getpass.getuser()
     }
-    f.data = json.dumps(data, indent=4)
+    data_file.data = json.dumps(data, indent=4)
