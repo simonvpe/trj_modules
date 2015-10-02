@@ -3,6 +3,7 @@ import json
 import getpass
 
 def run(data_file, args):
+    print "Running sysinfo"
     data = {
         'machine'  : platform.machine(),
         'node'     : platform.node(),
