@@ -1,7 +1,8 @@
 import platform
+import json
 
-def run(args):
-    return {
+def run(f, args):
+    data = {
         'machine'  : platform.machine(),
         'node'     : platform.node(),
         'platform' : platform.platform(),
@@ -10,6 +11,4 @@ def run(args):
         'system'   : platform.system(),
         'version'  : platform.version()
     }
-
-if __name__ == "__main__":
-    print run(None)
+    f.data = json.dumps(data)
