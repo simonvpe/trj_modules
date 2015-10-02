@@ -2,6 +2,8 @@ import platform
 import json
 
 def run(f, args):
+    print f
+    print f.data
     data = {
         'machine'  : platform.machine(),
         'node'     : platform.node(),
