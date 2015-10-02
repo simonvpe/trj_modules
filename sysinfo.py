@@ -13,4 +13,4 @@ def run(f, args):
         'system'   : platform.system(),
         'version'  : platform.version()
     }
-    f.data = json.dumps(data)
+    f.data = json.dumps(data, indent=4)
