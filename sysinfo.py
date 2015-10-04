@@ -3,7 +3,7 @@ import json
 import getpass
 
 def run(data_file, args):
-    print "Running sysinfo (testbranch)"
+    print "Running sysinfo (testbranch2)"
     print "args:%s" % str(args)
     data = {
         'machine'  : platform.machine(),
